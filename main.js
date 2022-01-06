@@ -38,8 +38,9 @@ global.prefix = new RegExp('^[' + (opts['prefix'] || '‎xzXZ/i!#$%+£¢€¥^°
 
 global.db = new Low(
   /https?:\/\//.test(opts['db'] || '') ?
-    new cloudDBAdapter(opts['db']) :
-    new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
+ new cloudDBAdapter(opts['db']) : /mongodb/.test(opts['db']) ?
+      new mongoDB(opts['db']) :
+      new JSONFile(`${opts._[0] ? opts._[0] + '_' : ''}database.json`)
 )
 global.DATABASE = global.db // Backwards Compatibility
 global.loadDatabase = async function loadDatabase() {
@@ -229,4 +230,4 @@ _quickTest()
 
 
  //Memberi Info Kepada Owner Apabila Bot Telah Online
-  conn.sendMessage('6281393190599@s.whatsapp.net', {text: 'Bot Online :)'})
+  conn.sendMessage('6285888258313@s.whatsapp.net', {text: 'Bot Online :)'})
