@@ -6,7 +6,7 @@ const received = chalk.bold.cyan
 const error = chalk.bold.red
 
 
-global.owner = ['6281390199407','6281393190599'] // Put your number here
+global.owner = ['6285888258313'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = {
@@ -44,7 +44,7 @@ global.APIKeys = {
   'http://api.vhtear.com': 'HIROZTWO',
   'https://api.lolhuman.xyz': 'HIRO',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://api.zeks.xyz': 'Tritoapriansyah',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
   'https://hardianto-chan.herokuapp.com': 'hardianto'
 }
