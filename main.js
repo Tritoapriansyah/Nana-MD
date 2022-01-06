@@ -5,6 +5,7 @@ const {
 } = require('@adiwajshing/baileys-md')
 const WebSocket = require('ws')
 const path = require('path')
+const cloudDBAdapter = require('./lib/cloudDBAdapter')
 const fs = require('fs')
 const yargs = require('yargs/yargs')
 const cp = require('child_process')
